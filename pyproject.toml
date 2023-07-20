@@ -62,13 +62,6 @@ cov = [
 [[tool.hatch.envs.all.matrix]]
 python = ["3.8", "3.9", "3.10", "3.11"]
 
-[tool.hatch.envs.pre-commit]
-detached = true
-dependencies = [
-  "pre-commit==3.3.3",
-]
-run = "pre-commit run --all-files"
-
 [tool.hatch.envs.lint]
 detached = true
 dependencies = [
